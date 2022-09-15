@@ -552,7 +552,7 @@ export default function Home() {
         </div>
       </div>
       <div className='bg-black w-full flex justify-center items-center px-6 pb-20 sm:pb-8'>
-        <div className='flex flex-wrap justify-center items-end font-IBMPlexLoop text-white text-xs md:text-sm lg:text-base text-center'>
+        <div className='flex flex-wrap gap-1 justify-center items-end font-IBMPlexLoop text-white text-xs md:text-sm lg:text-base text-center'>
           <span>จัดทำโดยนักเรียนชั้นมัธยมศึกษาปีที่ 6/9 ปีการศึกษา 2565</span>
           <span>โรงเรียนมหิดลวิทยานุสรณ์</span>
         </div>
