@@ -432,10 +432,7 @@ export default function Home() {
                 เกร็ดความรู้ Olympic
               </span>
             </div>
-            <div
-              className='w-full bg-gradient-to-b from-vbg to-transparent min-h-[30vh]'
-              ref={feRef}
-            />
+            <div className='w-full bg-gradient-to-b from-vbg to-transparent min-h-[30vh]' />
             <div className='w-full bg-transparent min-h-[40vh]' />
             <div className='w-full bg-gradient-to-t from-vbg to-transparent min-h-[30vh]' />
             <div className='w-full bg-vbg min-h-[80vh] grow px-10 py-20 flex flex-wrap justify-center items-center gap-6'>
