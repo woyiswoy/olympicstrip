@@ -255,7 +255,7 @@ export default function Home() {
                   ธงชาติแต่ละประเทศก็ต้องมีสีใดสีหนึ่งใน 5 สีเหล่านี้
                 </Paragraph>
                 <div className='px-10 flex justify-center py-10'>
-                  <img src='/img/olmlogo.png' className='w-full max-w-xs' />
+                  <img src='/img/olmlogosd.png' className='w-full max-w-xs' />
                 </div>
               </div>
             </div>
