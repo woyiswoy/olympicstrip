@@ -1,4 +1,5 @@
 import {
+  faAngleDoubleDown,
   faAngleDoubleLeft,
   faAngleDoubleUp,
   faFileLines,
@@ -150,6 +151,7 @@ export default function Home() {
             >
               OLYMPICS
             </motion.span>
+
             <motion.span
               className='font-Signika text-xl md:text-2xl lg:text-3xl text-tdk'
               initial={{ opacity: 0 }}
@@ -162,7 +164,20 @@ export default function Home() {
             >
               VIRTUAL TRIP BY MWIT30/9
             </motion.span>
-            <div className='flex flex-wrap justify-center gap-4 pt-6 px-10'>
+            <motion.div
+              className='flex items-center justify-center gap-1 px-3 py-1 my-6 font-IBMPlex font-semibold text-sm md:text-base lg:text-lg text-tdk/70 animate-bounce'
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 1,
+                delay: 2.7,
+                type: 'spring',
+              }}
+            >
+              <FontAwesomeIcon icon={faAngleDoubleDown} />
+              <span className=''>Scroll Down</span>
+            </motion.div>
+            <div className='flex flex-wrap justify-center gap-4 px-10'>
               {featureButton.map((fb, fbi) => (
                 <motion.button
                   key={fbi}
@@ -185,9 +200,10 @@ export default function Home() {
                 </motion.button>
               ))}
             </div>
+
             <motion.img
               src='/img/olmbg.jpg'
-              className='w-full max-w-2xl pt-16'
+              className='w-full max-w-2xl pt-8'
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
