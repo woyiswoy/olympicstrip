@@ -14,6 +14,7 @@ module.exports = {
             },
             colors: {
                 vbg: "#cec3a6",
+                vlg: "#DCD5C0",
                 tdk: "#3d4132"
             }
         },

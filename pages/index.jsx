@@ -196,11 +196,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='w-full bg-black relative inset-0 min-h-[350vh]'>
+        <div className='w-full bg-black relative min-h-[450vh]'>
           <div className='w-full absolute right-0 left-0 top-0 h-[10vh] bg-gradient-to-t from-transparent to-black !z-30' />
-          <div className='absolute inset-0 z-10 flex flex-col'>
+          <div className='absolute top-0 right-0 left-0 bottom-0 sm:bottom-auto z-10 flex flex-col'>
             <div className='w-full h-[10vh] bg-gradient-to-t from-transparent to-black' />
-            <div className='w-full bg-black min-h-[80vh]'>
+            <div className='w-full bg-black min-h-[50vh] flex flex-col'>
               <div className='max-w-6xl mx-auto flex flex-col justify-center px-10 py-20 gap-4'>
                 <span className='font-IBMPlex font-semibold text-4xl md:text-5xl lg:text-6xl text-orange-400'>
                   โอลิมปิก คืออะไร?
@@ -236,9 +236,14 @@ export default function Home() {
               </div>
             </div>
             <div
-              className='w-full bg-gradient-to-b from-black to-transparent min-h-[30vh]'
+              className='bg-black w-full h-[80vh] flex items-center justify-center px-10'
               ref={grRef}
-            />
+            >
+              <span className='font-Signika font-bold text-transparent text-6xl md:text-9xl lg:text-[10rem] bg-clip-text bg-gradient-to-b bg-fixed from-orange-400 to-white'>
+                GREECE
+              </span>
+            </div>
+            <div className='w-full bg-gradient-to-b from-black to-transparent min-h-[30vh]' />
             <div className='w-full bg-transparent min-h-[40vh]' />
             <div className='w-full bg-gradient-to-t from-black to-transparent min-h-[30vh]' />
             <div className='w-full bg-black min-h-[80vh] grow px-10 py-20 flex flex-wrap justify-center items-center gap-6'>
@@ -254,10 +259,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className='flex flex-col justify-center sticky top-0 min-h-screen w-full max-w-7xl px-10 mx-auto'>
-            <span className='font-Signika font-bold text-transparent text-6xl md:text-9xl lg:text-[10rem] bg-clip-text bg-gradient-to-r from-yellow-200 to-white'>
-              GREECE
-            </span>
+          <div className='flex flex-col justify-center sticky top-0 min-h-screen w-full max-w-xl px-8 mx-auto'>
             <Paragraph
               className={'pt-8 text-base md:text-xl lg:text-2xl text-white'}
             >
@@ -303,8 +305,8 @@ export default function Home() {
         </div>
       </div> */}
 
-        <div className='w-full bg-white relative inset-0 min-h-[350vh]'>
-          <div className='absolute inset-0 z-10 flex flex-col'>
+        <div className='w-full bg-white relative inset-0 min-h-[450vh]'>
+          <div className='absolute top-0 right-0 left-0 bottom-0 sm:bottom-auto z-10 flex flex-col'>
             <div className='w-full bg-white min-h-[80vh]'>
               <div className='max-w-6xl flex flex-col justify-center px-6 py-20 gap-6 mx-auto'>
                 <Question
@@ -332,9 +334,14 @@ export default function Home() {
               </div>
             </div>
             <div
-              className='w-full bg-gradient-to-b from-white to-transparent min-h-[30vh]'
+              className='bg-white w-full h-[80vh] flex items-center justify-center px-10'
               ref={frRef}
-            />
+            >
+              <span className='font-Signika font-bold text-transparent text-6xl md:text-9xl lg:text-[10rem] bg-clip-text bg-fixed bg-gradient-to-b from-rose-500 to-violet-700'>
+                FRANCE
+              </span>
+            </div>
+            <div className='w-full bg-gradient-to-b from-white to-transparent min-h-[30vh]' />
             <div className='w-full bg-transparent min-h-[40vh]' />
             <div className='w-full bg-gradient-to-t from-white to-transparent min-h-[30vh]' />
             <div className='w-full bg-white min-h-[80vh] grow px-10 py-20 flex flex-wrap justify-center gap-6'>
@@ -355,10 +362,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className='flex flex-col justify-center sticky top-0 min-h-screen w-full max-w-7xl px-10 mx-auto'>
-            <span className='font-Signika font-bold text-transparent text-6xl md:text-9xl lg:text-[10rem] bg-clip-text bg-gradient-to-r from-rose-500 to-violet-700'>
-              FRANCE
-            </span>
+          <div className='flex flex-col justify-center sticky top-0 min-h-screen w-full max-w-xl px-8 mx-auto'>
             <Paragraph className={'pt-8 text-base md:text-xl lg:text-2xl'}>
               ปารีส ประเทศฝรั่งเศสเป็นหนึ่งเมืองในฝันของใครหลาย ๆ คน
               ใครจะไปคิดว่ากรุงปารีสแห่งวัฒนธรรมและแฟชั่นอันยิ่งใหญ่แห่งยุโรปเเห่งนี้เคยเป็นเจ้าภาพจัดการแข่งขันโอลิมปิกฤดูหนาวหลังจากจัดครั้งเเรกที่เอเธนส์เพียง
@@ -390,32 +394,40 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='w-full bg-vbg relative inset-0 min-h-[340vh]'>
-          <div className='absolute inset-0 z-10 flex flex-col'>
+        <div className='w-full bg-vbg relative inset-0 min-h-[440vh]'>
+          <div className='absolute top-0 right-0 left-0 bottom-0 sm:bottom-auto z-10 flex flex-col'>
             <div className='w-full bg-vbg min-h-[80vh]'>
               <div className='max-w-6xl flex flex-col justify-center px-10 py-20 gap-6 mx-auto'>
                 <Question
                   q={'ในปี 2024 กีฬาอะไรที่ถูกเพิ่มขึ้นมาใหม่'}
                   ch={['มวยไทย', 'โปโล', 'โต้คลื่น']}
                   ans={3}
-                  className='bg-amber-100 rounded-xl py-4 px-6'
-                  hover='hover:bg-amber-200'
+                  className='bg-vlg rounded-xl py-4 px-6'
+                  hover='hover:bg-vbg'
                 />
                 <Question
                   q={'MONA LISA เป็นภาพของใคร'}
                   ch={['นางแบบ', 'ลีโอนาโดแต่งหญิง', 'สรุปไม่ได้']}
                   ans={3}
-                  className='bg-amber-100 rounded-xl py-4 px-6'
-                  hover='hover:bg-amber-200'
+                  className='bg-vlg rounded-xl py-4 px-6'
+                  hover='hover:bg-vbg'
                 />
                 <Question
                   q={'ลักษณะของศิลปะ gothic'}
                   ch={['มืด ๆ ทึบ ๆ', 'สว่างสดใส', 'Minimal']}
                   ans={1}
-                  className='bg-amber-100 rounded-xl py-4 px-6'
-                  hover='hover:bg-amber-200'
+                  className='bg-vlg rounded-xl py-4 px-6'
+                  hover='hover:bg-vbg'
                 />
               </div>
+            </div>
+            <div
+              className='bg-vbg w-full h-[80vh] flex items-center justify-center px-10'
+              ref={feRef}
+            >
+              <span className='font-IBMPlex font-bold text-4xl md:text-6xl lg:text-7xl text-tdk'>
+                เกร็ดความรู้ Olympic
+              </span>
             </div>
             <div
               className='w-full bg-gradient-to-b from-vbg to-transparent min-h-[30vh]'
@@ -436,10 +448,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className='flex flex-col justify-center sticky top-0 min-h-screen w-full max-w-7xl px-10 mx-auto'>
-            <span className='font-IBMPlex font-bold text-tdk text-3xl md:text-5xl lg:text-6xl'>
-              เกร็ดความรู้ Olympic
-            </span>
+          <div className='flex flex-col justify-center sticky top-0 min-h-screen w-full max-w-xl px-8 mx-auto'>
             <Paragraph className={'pt-8 text-base md:text-xl lg:text-2xl'}>
               ไม่ว่าใครก็อยากประสบความสำเร็จในชีวิตกันทั้งนั้น
               เเต่บางอย่างก็ผิดพลาดกันได้ โอลิมปิกก็เช่นกัน
@@ -471,7 +480,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='bg-black w-full min-h-screen flex justify-center items-center px-6'>
+        <div className='bg-black w-full min-h-screen flex flex-col gap-6 justify-center items-center px-6'>
           <iframe
             loading='lazy'
             type='text/html'
@@ -480,6 +489,20 @@ export default function Home() {
             frameBorder='0'
             allowFullScreen
           />
+          <Link
+            href={
+              'https://docs.google.com/forms/d/e/1FAIpQLSf1KNbPIHQD-b1ZKNc5yXdHOBO7jz5OtY-idpLbJj0dxKzByg/viewform?usp=sf_link'
+            }
+          >
+            <a
+              target='_blank'
+              rel='noopener noreferrer'
+              className='flex font-IBMPlexLoop font-medium items-center justify-center py-2 px-4 gap-2 text-lg sm:text-xl lg:text-2xl rounded-full bg-vbg hover:bg-tdk transition-colors duration-300 text-black hover:text-white'
+            >
+              <FontAwesomeIcon icon={faFileLines} />
+              <span className='whitespace-nowrap'>แบบประเมิน</span>
+            </a>
+          </Link>
           {/* <div
           style={{
             'box-shadow': '0 2px 8px 0 rgba(63,69,81,0.16)',
