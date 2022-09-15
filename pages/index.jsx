@@ -78,7 +78,7 @@ export default function Home() {
       </Head>
 
       <div
-        className='fixed bottom-0 right-0 left-0 sm:left-auto sm:top-[90vh] z-20'
+        className='fixed bottom-0 right-0 left-0 sm:left-auto sm:top-[90vh] z-40'
         // style={{ transformOrigin: '100% 0' }}
       >
         <div className='flex flex-wrap sm:rotate-90 sm:origin-top-right font-IBMPlexLoop font-semibold'>
@@ -223,8 +223,11 @@ export default function Home() {
         <div className='w-full bg-black relative'>
           <div className='w-full absolute right-0 left-0 top-0 h-[10vh] bg-gradient-to-t from-transparent to-black !z-50' />
           <div className='flex flex-col'>
-            {/* <div className='w-full h-[10vh] bg-gradient-to-t from-transparent to-black z-20' /> */}
-            <div className='w-full bg-black min-h-[50vh] flex flex-col z-10'>
+            {/* <div className='w-full h-[10vh] bg-gradient-to-t from-transparent to-black z-20' style={{ transform: 'translate3d(0, 0, 0)' }} /> */}
+            <div
+              className='w-full bg-black min-h-[50vh] flex flex-col z-20'
+              style={{ transform: 'translate3d(0, 0, 0)' }}
+            >
               <div className='max-w-6xl mx-auto flex flex-col justify-center px-10 py-20 gap-4'>
                 <span className='font-IBMPlex font-semibold text-4xl md:text-5xl lg:text-6xl text-orange-400'>
                   โอลิมปิก คืออะไร?
@@ -260,17 +263,30 @@ export default function Home() {
               </div>
             </div>
             <div
-              className='bg-black w-full h-[80vh] flex items-center justify-center px-10 z-10'
+              className='bg-black w-full h-[80vh] flex items-center justify-center px-10 z-20'
+              style={{ transform: 'translate3d(0, 0, 0)' }}
               ref={grRef}
             >
               <span className='font-Signika font-bold text-transparent text-6xl md:text-9xl lg:text-[10rem] bg-clip-text bg-gradient-to-b bg-fixed from-orange-400 to-white'>
                 GREECE
               </span>
             </div>
-            <div className='w-full bg-gradient-to-b from-black to-transparent min-h-[30vh] z-10' />
-            <div className='w-full bg-transparent min-h-[40vh] z-10' />
-            <div className='w-full bg-gradient-to-t from-black to-transparent min-h-[30vh] z-10' />
-            <div className='w-full bg-black min-h-[80vh] grow px-10 py-20 flex flex-wrap justify-center items-center gap-6 z-10'>
+            <div
+              className='w-full bg-gradient-to-b from-black to-transparent min-h-[30vh] z-20'
+              style={{ transform: 'translate3d(0, 0, 0)' }}
+            />
+            <div
+              className='w-full bg-transparent min-h-[40vh] z-20'
+              style={{ transform: 'translate3d(0, 0, 0)' }}
+            />
+            <div
+              className='w-full bg-gradient-to-t from-black to-transparent min-h-[30vh] z-20'
+              style={{ transform: 'translate3d(0, 0, 0)' }}
+            />
+            <div
+              className='w-full bg-black min-h-[80vh] grow px-10 py-20 flex flex-wrap justify-center items-center gap-6 z-20'
+              style={{ transform: 'translate3d(0, 0, 0)' }}
+            >
               <EventPic
                 src='/img/grevent/1896-6.jpeg'
                 alt='การแข่งขันกีฬาโอลิมปิกในปี 1896'
@@ -283,7 +299,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className='absolute inset-0 w-full !z-0'>
+          <div className='absolute inset-0 w-full -z-0'>
             <div className='flex flex-col justify-center sticky top-0 min-h-screen w-full max-w-xl px-8 mx-auto'>
               <Paragraph
                 className={'pt-8 text-base md:text-xl lg:text-2xl text-white'}
@@ -334,7 +350,10 @@ export default function Home() {
 
         <div className='w-full bg-white relative'>
           <div className='flex flex-col'>
-            <div className='w-full bg-white min-h-[80vh] z-10'>
+            <div
+              className='w-full bg-white min-h-[80vh] z-20'
+              style={{ transform: 'translate3d(0, 0, 0)' }}
+            >
               <div className='max-w-6xl flex flex-col justify-center px-6 py-20 gap-6 mx-auto'>
                 <Question
                   q={'วิหารพาเธนอนมีเสาหินแบบใด'}
@@ -361,17 +380,30 @@ export default function Home() {
               </div>
             </div>
             <div
-              className='bg-white w-full h-[80vh] flex items-center justify-center px-10 z-10'
+              className='bg-white w-full h-[80vh] flex items-center justify-center px-10 z-20'
+              style={{ transform: 'translate3d(0, 0, 0)' }}
               ref={frRef}
             >
               <span className='font-Signika font-bold text-transparent text-6xl md:text-9xl lg:text-[10rem] bg-clip-text bg-fixed bg-gradient-to-b from-rose-500 to-violet-700'>
                 FRANCE
               </span>
             </div>
-            <div className='w-full bg-gradient-to-b from-white to-transparent min-h-[30vh] z-10' />
-            <div className='w-full bg-transparent min-h-[40vh] z-10' />
-            <div className='w-full bg-gradient-to-t from-white to-transparent min-h-[30vh] z-10' />
-            <div className='w-full bg-white min-h-[80vh] grow px-10 py-20 flex flex-wrap justify-center gap-6 z-10'>
+            <div
+              className='w-full bg-gradient-to-b from-white to-transparent min-h-[30vh] z-20'
+              style={{ transform: 'translate3d(0, 0, 0)' }}
+            />
+            <div
+              className='w-full bg-transparent min-h-[40vh] z-20'
+              style={{ transform: 'translate3d(0, 0, 0)' }}
+            />
+            <div
+              className='w-full bg-gradient-to-t from-white to-transparent min-h-[30vh] z-20'
+              style={{ transform: 'translate3d(0, 0, 0)' }}
+            />
+            <div
+              className='w-full bg-white min-h-[80vh] grow px-10 py-20 flex flex-wrap justify-center gap-6 z-20'
+              style={{ transform: 'translate3d(0, 0, 0)' }}
+            >
               {/* <EventPic
                 src='/img/frevent/1900-1.jpeg'
                 alt='การแข่งขันกีฬาโอลิมปิกในปี 1900'
@@ -425,7 +457,10 @@ export default function Home() {
 
         <div className='w-full bg-vbg relative'>
           <div className='flex flex-col'>
-            <div className='w-full bg-vbg z-10'>
+            <div
+              className='w-full bg-vbg z-20'
+              style={{ transform: 'translate3d(0, 0, 0)' }}
+            >
               <div className='max-w-6xl flex flex-col justify-center px-10 py-20 gap-6 mx-auto'>
                 <Question
                   q={'ในปี 2024 กีฬาอะไรที่ถูกเพิ่มขึ้นมาใหม่'}
@@ -451,17 +486,30 @@ export default function Home() {
               </div>
             </div>
             <div
-              className='bg-vbg w-full h-[80vh] flex items-center justify-center px-10 z-10'
+              className='bg-vbg w-full h-[80vh] flex items-center justify-center px-10 z-20'
+              style={{ transform: 'translate3d(0, 0, 0)' }}
               ref={feRef}
             >
               <span className='font-IBMPlex font-bold text-4xl md:text-6xl lg:text-7xl text-tdk'>
                 เกร็ดความรู้ Olympic
               </span>
             </div>
-            <div className='w-full bg-gradient-to-b from-vbg to-transparent min-h-[30vh] z-10' />
-            <div className='w-full bg-transparent min-h-[40vh] z-10' />
-            <div className='w-full bg-gradient-to-t from-vbg to-transparent min-h-[30vh] z-10' />
-            <div className='w-full bg-vbg min-h-[80vh] grow px-10 py-20 flex flex-wrap justify-center items-center gap-6 z-10'>
+            <div
+              className='w-full bg-gradient-to-b from-vbg to-transparent min-h-[30vh] z-20'
+              style={{ transform: 'translate3d(0, 0, 0)' }}
+            />
+            <div
+              className='w-full bg-transparent min-h-[40vh] z-20'
+              style={{ transform: 'translate3d(0, 0, 0)' }}
+            />
+            <div
+              className='w-full bg-gradient-to-t from-vbg to-transparent min-h-[30vh] z-20'
+              style={{ transform: 'translate3d(0, 0, 0)' }}
+            />
+            <div
+              className='w-full bg-vbg min-h-[80vh] grow px-10 py-20 flex flex-wrap justify-center items-center gap-6 z-20'
+              style={{ transform: 'translate3d(0, 0, 0)' }}
+            >
               <EventPic
                 src='/img/feevent/1920.jpeg'
                 alt='การแข่งขันกีฬาโอลิมปิกในปี 1920 เบลเยียม'
