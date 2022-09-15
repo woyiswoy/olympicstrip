@@ -20,7 +20,7 @@ export default function Home() {
   const featureButton = [
     {
       img: '/img/cover/Greece03.jpeg',
-      name: 'GREECE (Olpmpia)',
+      name: 'GREECE (Olympia)',
       ref: grRef,
     },
     {
@@ -286,7 +286,7 @@ export default function Home() {
             <iframe
               type='text/html'
               className='w-full max-w-4xl aspect-video rounded-xl'
-              src='https://www.youtube.com/embed/IUs_ETT0Fac?modestbranding=1&color=white&iv_load_policy=3'
+              src='https://www.youtube.com/embed/-z6030DbKWU?modestbranding=1&color=white&iv_load_policy=3'
               frameBorder='0'
               allowFullScreen
             />
@@ -322,7 +322,7 @@ export default function Home() {
                 <Question
                   q={'ข้อใดกล่าวถูกต้องเกี่ยวกับการแข่งขันช่วงแรกของโอลิมปิก'}
                   ch={[
-                    'ผู้หญิงเข้าชมและแข่งได',
+                    'ผู้หญิงเข้าชมและแข่งได้',
                     'ผู้หญิงเข้าชมได้แข่งไม่ได้',
                     'ผู้หญิงเข้าชมและแข่งไม่ได้',
                   ]}
@@ -383,7 +383,7 @@ export default function Home() {
             <iframe
               type='text/html'
               className='w-full max-w-4xl aspect-video rounded-xl'
-              src='https://www.youtube.com/embed/f8DrVW8pTVQ?modestbranding=1&color=white&iv_load_policy=3'
+              src='https://www.youtube.com/embed/MzQnZ49Hz6U?modestbranding=1&color=white&iv_load_policy=3'
               frameBorder='0'
               allowFullScreen
             />
@@ -396,7 +396,7 @@ export default function Home() {
               <div className='max-w-6xl flex flex-col justify-center px-10 py-20 gap-6 mx-auto'>
                 <Question
                   q={'ในปี 2024 กีฬาอะไรที่ถูกเพิ่มขึ้นมาใหม่'}
-                  ch={['มวยไทย', 'โปโล', 'ฟุตบอล']}
+                  ch={['มวยไทย', 'โปโล', 'โต้คลื่น']}
                   ans={3}
                   className='bg-amber-100 rounded-xl py-4 px-6'
                   hover='hover:bg-amber-200'
@@ -410,7 +410,7 @@ export default function Home() {
                 />
                 <Question
                   q={'ลักษณะของศิลปะ gothic'}
-                  ch={['มืดๆทึมๆ', 'สว่างสดใส', 'Minimal']}
+                  ch={['มืด ๆ ทึบ ๆ', 'สว่างสดใส', 'Minimal']}
                   ans={1}
                   className='bg-amber-100 rounded-xl py-4 px-6'
                   hover='hover:bg-amber-200'
@@ -464,7 +464,7 @@ export default function Home() {
             <iframe
               type='text/html'
               className='w-full max-w-4xl aspect-video rounded-xl'
-              src='https://www.youtube.com/embed/P4O2MxKy_3A?modestbranding=1&color=white&iv_load_policy=3'
+              src='https://www.youtube.com/embed/Qisirdx90Lg?modestbranding=1&color=white&iv_load_policy=3'
               frameBorder='0'
               allowFullScreen
             />
