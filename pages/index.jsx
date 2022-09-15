@@ -39,7 +39,10 @@ export default function Home() {
       <Head>
         {/* <!-- HTML Meta Tags --> */}
         <title>OLYMPICS Virtual Trip By MWIT30/9</title>
-        <meta name='description' content='OLYMPICS Virtual Trip By MWIT30/9' />
+        <meta
+          name='description'
+          content='พวกเรา MWIT30/9 จะพาทุกคนบินลัดฟ้าไปดูจุดเริ่มต้นเเละความเป็นมาของกีฬาโอลิมปิก เรียนรู้วัฒนธรรมเเละประวัติศาสตร์โลก ผ่านการท่องเที่ยวในเมืองที่เคยจัดโอลิมปิกมาเเล้ว อย่างเอเธนส์ ประเทศกรีซ และปารีส ประเทศฝรั่งเศส'
+        />
 
         {/* <!-- Facebook Meta Tags --> */}
         <meta property='og:url' content='https://olympicstrip.woyiswoy.com' />
@@ -47,7 +50,7 @@ export default function Home() {
         <meta property='og:title' content='OLYMPICS Virtual Trip' />
         <meta
           property='og:description'
-          content='OLYMPICS Virtual Trip By MWIT30/9'
+          content='พวกเรา MWIT30/9 จะพาทุกคนบินลัดฟ้าไปดูจุดเริ่มต้นเเละความเป็นมาของกีฬาโอลิมปิก เรียนรู้วัฒนธรรมเเละประวัติศาสตร์โลก ผ่านการท่องเที่ยวในเมืองที่เคยจัดโอลิมปิกมาเเล้ว อย่างเอเธนส์ ประเทศกรีซ และปารีส ประเทศฝรั่งเศส'
         />
         <meta
           property='og:image'
@@ -64,7 +67,7 @@ export default function Home() {
         <meta name='twitter:title' content='OLYMPICS Virtual Trip' />
         <meta
           name='twitter:description'
-          content='OLYMPICS Virtual Trip By MWIT30/9'
+          content='พวกเรา MWIT30/9 จะพาทุกคนบินลัดฟ้าไปดูจุดเริ่มต้นเเละความเป็นมาของกีฬาโอลิมปิก เรียนรู้วัฒนธรรมเเละประวัติศาสตร์โลก ผ่านการท่องเที่ยวในเมืองที่เคยจัดโอลิมปิกมาเเล้ว อย่างเอเธนส์ ประเทศกรีซ และปารีส ประเทศฝรั่งเศส'
         />
         <meta
           name='twitter:image'
