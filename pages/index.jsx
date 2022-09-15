@@ -7,7 +7,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Head from 'next/head'
 import Link from 'next/link'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import EventPic from '../components/event'
 import Paragraph from '../components/pg'
 import Question from '../components/qs'
@@ -18,6 +18,7 @@ export default function Home() {
   const frRef = useRef(null)
   const feRef = useRef(null)
   const topRef = useRef(null)
+  const stRef = useRef(null)
   const featureButton = [
     {
       img: '/img/cover/Greece03.jpeg',
@@ -164,8 +165,8 @@ export default function Home() {
             >
               VIRTUAL TRIP BY MWIT30/9
             </motion.span>
-            <motion.div
-              className='flex items-center justify-center gap-1 px-3 py-1 my-6 font-IBMPlex font-semibold text-sm md:text-base lg:text-lg text-tdk/70 animate-bounce'
+            <motion.button
+              className='flex items-center justify-center gap-1 px-3 py-1 my-4 md:my-6 font-IBMPlex font-semibold text-sm md:text-base lg:text-lg text-tdk/70 animate-bounce hover:text-tdk transition-colors duration-300'
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
@@ -173,10 +174,13 @@ export default function Home() {
                 delay: 2.7,
                 type: 'spring',
               }}
+              onClick={() =>
+                stRef.current?.scrollIntoView({ behavior: 'smooth' })
+              }
             >
               <FontAwesomeIcon icon={faAngleDoubleDown} />
               <span className=''>Scroll Down</span>
-            </motion.div>
+            </motion.button>
             <div className='flex flex-wrap justify-center gap-4 px-10'>
               {featureButton.map((fb, fbi) => (
                 <motion.button
@@ -211,13 +215,14 @@ export default function Home() {
                 delay: 2.3,
                 type: 'spring',
               }}
+              ref={stRef}
             />
           </div>
         </div>
 
         <div className='w-full bg-black relative min-h-[450vh]'>
           <div className='w-full absolute right-0 left-0 top-0 h-[10vh] bg-gradient-to-t from-transparent to-black !z-30' />
-          <div className='absolute top-0 right-0 left-0 bottom-0 sm:bottom-auto z-10 flex flex-col'>
+          <div className='absolute top-0 right-0 left-0 bottom-0 z-10 flex flex-col'>
             <div className='w-full h-[10vh] bg-gradient-to-t from-transparent to-black' />
             <div className='w-full bg-black min-h-[50vh] flex flex-col'>
               <div className='max-w-6xl mx-auto flex flex-col justify-center px-10 py-20 gap-4'>
@@ -325,7 +330,7 @@ export default function Home() {
       </div> */}
 
         <div className='w-full bg-white relative inset-0 min-h-[450vh]'>
-          <div className='absolute top-0 right-0 left-0 bottom-0 sm:bottom-auto z-10 flex flex-col'>
+          <div className='absolute top-0 right-0 left-0 bottom-0 z-10 flex flex-col'>
             <div className='w-full bg-white min-h-[80vh]'>
               <div className='max-w-6xl flex flex-col justify-center px-6 py-20 gap-6 mx-auto'>
                 <Question
@@ -414,7 +419,7 @@ export default function Home() {
         </div>
 
         <div className='w-full bg-vbg relative inset-0 min-h-[440vh]'>
-          <div className='absolute top-0 right-0 left-0 bottom-0 sm:bottom-auto z-10 flex flex-col'>
+          <div className='absolute top-0 right-0 left-0 bottom-0 z-10 flex flex-col'>
             <div className='w-full bg-vbg min-h-[80vh]'>
               <div className='max-w-6xl flex flex-col justify-center px-10 py-20 gap-6 mx-auto'>
                 <Question
