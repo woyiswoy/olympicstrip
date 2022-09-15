@@ -171,7 +171,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 duration: 1,
-                delay: 2.7,
+                delay: 1.2,
                 type: 'spring',
               }}
               onClick={() =>
@@ -179,7 +179,7 @@ export default function Home() {
               }
             >
               <FontAwesomeIcon icon={faAngleDoubleDown} />
-              <span className=''>Scroll Down</span>
+              <span className='whitespace-nowrap'>Scroll Down</span>
             </motion.button>
             <div className='flex flex-wrap justify-center gap-4 px-10'>
               {featureButton.map((fb, fbi) => (
@@ -193,7 +193,7 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
                     duration: 1,
-                    delay: 1.2 + fbi * 0.4,
+                    delay: 1.7 + fbi * 0.4,
                     type: 'spring',
                   }}
                 >
@@ -212,7 +212,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 duration: 1,
-                delay: 2.3,
+                delay: 2.7,
                 type: 'spring',
               }}
               ref={stRef}
@@ -552,10 +552,10 @@ export default function Home() {
         </div>
       </div>
       <div className='bg-black w-full flex justify-center items-center px-6 pb-20 sm:pb-8'>
-        <span className='font-IBMPlexLoop text-white text-xs md:text-sm lg:text-base text-center'>
-          จัดทำโดยนักเรียนชั้นมัธยมศึกษาปีที่ 6/9 ปีการศึกษา 2565
-          โรงเรียนมหิดลวิทยานุสรณ์
-        </span>
+        <div className='flex flex-wrap justify-center items-end font-IBMPlexLoop text-white text-xs md:text-sm lg:text-base text-center'>
+          <span>จัดทำโดยนักเรียนชั้นมัธยมศึกษาปีที่ 6/9 ปีการศึกษา 2565</span>
+          <span>โรงเรียนมหิดลวิทยานุสรณ์</span>
+        </div>
       </div>
     </>
   )
