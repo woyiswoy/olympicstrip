@@ -51,7 +51,7 @@ export default function Home() {
         />
         <meta
           property='og:image'
-          content='https://olympicstrip.woyiswoy.com/img/ogimage.png'
+          content='https://olympicstrip.woyiswoy.com/img/ogimage.jpg'
         />
 
         {/* <!-- Twitter Meta Tags --> */}
@@ -68,7 +68,7 @@ export default function Home() {
         />
         <meta
           name='twitter:image'
-          content='https://mwitophcdn.woyiswoy.com/img/ogimage.png'
+          content='https://olympicstrip.woyiswoy.com/img/ogimage.jpg'
         />
       </Head>
 
