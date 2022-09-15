@@ -44,7 +44,7 @@ export default function Home() {
         {/* <!-- Facebook Meta Tags --> */}
         <meta property='og:url' content='https://olympicstrip.woyiswoy.com' />
         <meta property='og:type' content='website' />
-        <meta property='og:title' content='MWIT Open House 2022' />
+        <meta property='og:title' content='OLYMPICS Virtual Trip' />
         <meta
           property='og:description'
           content='OLYMPICS Virtual Trip By MWIT30/9'
@@ -56,12 +56,12 @@ export default function Home() {
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name='twitter:card' content='summary_large_image' />
-        <meta property='twitter:domain' content='openhouse.mwit.ac.th' />
+        <meta property='twitter:domain' content='olympicstrip.woyiswoy.com' />
         <meta
           property='twitter:url'
           content='https://olympicstrip.woyiswoy.com'
         />
-        <meta name='twitter:title' content='MWIT Open House 2022' />
+        <meta name='twitter:title' content='OLYMPICS Virtual Trip' />
         <meta
           name='twitter:description'
           content='OLYMPICS Virtual Trip By MWIT30/9'
